@@ -198,34 +198,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# =========================
-# HOW TO USE
-# =========================
-# 1. Install dependencies:
-# pip install streamlit langchain langchain-openai pydantic python-dotenv langfuse pymupdf
-
-# 2. Create .env file:
-# OPENAI_API_KEY=your_key
-# LANGFUSE_PUBLIC_KEY=your_key
-# LANGFUSE_SECRET_KEY=your_key
-
-# 3. Run app:
-# streamlit run chatgpt.py
-
-# 4. In browser:
-# - Upload original contract (PDF or image)
-# - Upload amendment
-# - Click "Analyze"
-
-# 5. Output:
-# - Structured JSON with legal changes
-# - Logged traces in Langfuse dashboard
-
-# =========================
-# NOTES
-# =========================
-# - Uses Vision for ALL parsing (robust for scanned docs)
-# - PDF pages processed sequentially
-# - Safe logging prevents crashes
-# - Ready for production upgrades (async, RAG, LangGraph)
